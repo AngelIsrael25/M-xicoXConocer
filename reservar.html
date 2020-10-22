@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="images/ICONO_640X640.jpeg">
+        <title>México X Conocer</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.dropotron.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!--ESTILOS CSS-->
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-wide.css" /> 
+	
+</head>
+<body>
+	<div id="header" class="skel-panels-fixed">
+						<div id="logo">
+							<h1>México X Conocer</h1>
+							<span class="tag">Viaja Fácil y Barato!</span>
+						</div>
+      						<nav id="nav">
+        						<ul>
+          							<li><a href="INDEX.html">INICIO</a></li>
+          							<li><a href="#">FOTOS</a>
+            							<ul>
+              								<li><a href="fotos.html">VIAJES RECIENTES</a></li>              								
+            							</ul>  
+          							</li>
+          							<li><a href="reservar.html">RESERVAR</a></li>
+          							<li><a href="MESES_INTERESES.html">MESES SIN INTERESES</a></li>          							
+        						</ul>	      		
+ 							</nav>
+					</div>
+					<br><br>
+					<!-- Footer -->
+		<div id="footer" class="wrapper style2">
+			<div class="container">
+				<section>
+					<header class="major">
+						<h2>México X Conocer</h2>
+						<span class="tag">Viaja Fácil y Barato!</span>
+						<span class="byline">REALIZAR RESERVACIÓN</span>
+					</header>
+					<div class="emergente" id="men">
+							<div id="cerrar"><a href="javascript:cerrar()"><img src="images/error.png"></a><center><p><strong>México X Conocer</strong></p></center></div>
+								<p>
+							<strong>¡MUCHAS GRACIAS POR TU RESERVACIÓN!</strong><br>
+								En Un Momento Nos Comunicamos Contigo
+							</p>
+						</div>
+					<form method="post" action="#" id="form">
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="text" name="name" id="name" placeholder="Nombre" required="true" />
+							</div>
+						</div>
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="tel" name="name" id="name" placeholder="Telefono Celular" required="true" />
+							</div>
+						</div>
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="text" name="email" id="email" placeholder="Correo Electronico" required="true" />
+							</div>
+						</div>
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="text" name="text" id="email" placeholder="Direccion: Calle #53 Colonia Manzanos, México" required="true" />
+							</div>
+						</div>
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="text" name="text" id="email" value="¿Cuándo quieres viajar?" disabled="false" />
+								<input class="text" type="date" name="text" id="email" placeholder="¿Cuándo quieres viajar?" required="true" />
+							</div>
+						</div>
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="text" name="text" id="email" value="¿Dónde quieres viajar?" disabled="false" />
+								<select class="text" name="text" id="email" id="select" required="true">
+									<option >Selecciona una opción</option>
+									<option >CHIHUAHUA</option>
+									<option >CHIAPAS</option>
+									<option >CANCÚN</option>
+									<option >LOS CABOS</option>
+									<option >PUERTO VALLARTA</option>
+									<option >MAZATLÁN</option>					
+								</select>
+								
+							</div>
+						</div>
+						<div class="row half">
+							<div class="12u">
+								<input class="text" type="text" name="text" id="email" value="¿Cuántas mesualidades?" disabled="false" />
+								<select class="text" name="text" id="email" id="select" required="true">
+									<option >Selecciona una opción</option>
+									<option >6 Meses</option>
+									<option >12 Meses</option>
+									<option >18 Meses</option>
+												
+								</select>
+								
+							</div>
+						</div>
+						<div class="row half">
+							<div class="12u">
+								<textarea name="message" id="message" placeholder="Descripción General De Como Realizaras Tu Viaje" required="true"></textarea>
+							</div>
+						</div>
+						
+						<div class="row half">
+							<div class="12u">
+								<ul class="actions">
+									<li><BR>
+										<a href="javascript:mensaje()" class="button alt">ENVIAR RESERVACION</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+		<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				<div class="copyright">
+					<p>SIGUENOS EN REDES SOCIALES<BR>México X Conocer<br>©Israel Rodríguez</p>
+					<ul class="icons">
+						<li><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+						<li><a href="#" class="fa fa-instagram"><span>Twitter</span></a></li>
+						<li><a href="#" class="fa fa-twitter"><span>Google+</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function mensaje(){
+				document.getElementById("men").style.display="block";
+				document.getElementById("form").style.opacity="0%";
+			} 
+		function cerrar(){
+				document.getElementById("men").style.display="none";
+				
+
+				
+				
+			} 
+	</script>
+</body>
+</html>
